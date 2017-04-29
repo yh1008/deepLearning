@@ -1,8 +1,5 @@
-# homework-v-yh1008  
-UNIs:Emily Hua yh2901, Ming Zhou mz2591  
-
-We execuated the script on personal environment, which `environment.yml` is included.  
-   
+ Keras + Sklearn Wrapper   
+ 
 - [x] Task1  Iris+DNN  
 highest accuracy is 0.97 achieved with 100 epoches (12 as first hidden layer size, and 6 as the second hidden layer size). For details, please see `task1/Task1-Iris-DNN.ipynb` 
 
