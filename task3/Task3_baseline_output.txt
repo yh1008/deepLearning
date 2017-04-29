@@ -1,0 +1,167 @@
+[yh2901@node074 yh2901]$ python 1.py
+
+Using TensorFlow backend.
+
+(32, 32, 3, 73257)
+
+('x_train shape:', (73257, 32, 32, 3))
+
+(73257, 'train samples')
+
+(26032, 'test samples')
+
+after process: X train shape: (32, 32, 3, 73257), X test shape: (32, 32, 3, 26032), y train shape: (73257, 10), y test shape: (26032, 10)
+
+Train on 73257 samples, validate on 26032 samples
+
+Epoch 1/30
+
+2017-04-24 18:37:32.436391: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+
+2017-04-24 18:37:32.436483: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+
+2017-04-24 18:37:32.436517: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+
+2017-04-24 18:37:32.436547: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+
+2017-04-24 18:37:32.436576: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+
+2017-04-24 18:37:32.807529: I tensorflow/core/common_runtime/gpu/gpu_device.cc:887] Found device 0 with properties: 
+
+name: Tesla K80
+
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+
+pciBusID 0000:8b:00.0
+
+Total memory: 11.20GiB
+
+Free memory: 11.13GiB
+
+2017-04-24 18:37:32.807749: I tensorflow/core/common_runtime/gpu/gpu_device.cc:908] DMA: 0 
+
+2017-04-24 18:37:32.807789: I tensorflow/core/common_runtime/gpu/gpu_device.cc:918] 0:   Y 
+
+2017-04-24 18:37:32.807862: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:8b:00.0)
+
+73257/73257 [==============================] - 74s - loss: 1.2229 - acc: 0.6005 - val_loss: 0.6787 - val_acc: 0.8042
+
+Epoch 2/30
+
+73257/73257 [==============================] - 17s - loss: 0.7479 - acc: 0.7654 - val_loss: 0.5641 - val_acc: 0.8360
+
+Epoch 3/30
+
+73257/73257 [==============================] - 17s - loss: 0.6618 - acc: 0.7941 - val_loss: 0.5270 - val_acc: 0.8445
+
+Epoch 4/30
+
+73257/73257 [==============================] - 17s - loss: 0.6158 - acc: 0.8064 - val_loss: 0.5062 - val_acc: 0.8565
+
+Epoch 5/30
+
+73257/73257 [==============================] - 17s - loss: 0.5815 - acc: 0.8191 - val_loss: 0.4877 - val_acc: 0.8594
+
+Epoch 6/30
+
+73257/73257 [==============================] - 17s - loss: 0.5487 - acc: 0.8285 - val_loss: 0.4948 - val_acc: 0.8538
+
+Epoch 7/30
+
+73257/73257 [==============================] - 17s - loss: 0.5247 - acc: 0.8356 - val_loss: 0.4638 - val_acc: 0.8640
+
+Epoch 8/30
+
+73257/73257 [==============================] - 17s - loss: 0.5021 - acc: 0.8421 - val_loss: 0.4523 - val_acc: 0.8654
+
+Epoch 9/30
+
+73257/73257 [==============================] - 17s - loss: 0.4862 - acc: 0.8471 - val_loss: 0.4392 - val_acc: 0.8730
+
+Epoch 10/30
+
+73257/73257 [==============================] - 17s - loss: 0.4703 - acc: 0.8516 - val_loss: 0.4455 - val_acc: 0.8670
+
+Epoch 11/30
+
+73257/73257 [==============================] - 17s - loss: 0.4497 - acc: 0.8574 - val_loss: 0.4260 - val_acc: 0.8747
+
+Epoch 12/30
+
+73257/73257 [==============================] - 17s - loss: 0.4399 - acc: 0.8605 - val_loss: 0.4315 - val_acc: 0.8743
+
+Epoch 13/30
+
+73257/73257 [==============================] - 17s - loss: 0.4263 - acc: 0.8644 - val_loss: 0.4122 - val_acc: 0.8807
+
+Epoch 14/30
+
+73257/73257 [==============================] - 17s - loss: 0.4171 - acc: 0.8673 - val_loss: 0.4132 - val_acc: 0.8813
+
+Epoch 15/30
+
+73257/73257 [==============================] - 17s - loss: 0.3990 - acc: 0.8729 - val_loss: 0.4023 - val_acc: 0.8821
+
+Epoch 16/30
+
+73257/73257 [==============================] - 17s - loss: 0.3935 - acc: 0.8751 - val_loss: 0.4167 - val_acc: 0.8786
+
+Epoch 17/30
+
+73257/73257 [==============================] - 17s - loss: 0.3796 - acc: 0.8785 - val_loss: 0.3971 - val_acc: 0.8854
+
+Epoch 18/30
+
+73257/73257 [==============================] - 17s - loss: 0.3716 - acc: 0.8793 - val_loss: 0.3963 - val_acc: 0.8882
+
+Epoch 19/30
+
+73257/73257 [==============================] - 17s - loss: 0.3581 - acc: 0.8856 - val_loss: 0.3976 - val_acc: 0.8859
+
+Epoch 20/30
+
+73257/73257 [==============================] - 17s - loss: 0.3465 - acc: 0.8880 - val_loss: 0.3974 - val_acc: 0.8883
+
+Epoch 21/30
+
+73257/73257 [==============================] - 17s - loss: 0.3375 - acc: 0.8904 - val_loss: 0.3963 - val_acc: 0.8865
+
+Epoch 22/30
+
+73257/73257 [==============================] - 17s - loss: 0.3274 - acc: 0.8948 - val_loss: 0.3956 - val_acc: 0.8899
+
+Epoch 23/30
+
+73257/73257 [==============================] - 17s - loss: 0.3233 - acc: 0.8936 - val_loss: 0.3922 - val_acc: 0.8912
+
+Epoch 24/30
+
+73257/73257 [==============================] - 17s - loss: 0.3179 - acc: 0.8978 - val_loss: 0.4085 - val_acc: 0.8864
+
+Epoch 25/30
+
+73257/73257 [==============================] - 17s - loss: 0.3094 - acc: 0.8977 - val_loss: 0.3965 - val_acc: 0.8922
+
+Epoch 26/30
+
+73257/73257 [==============================] - 17s - loss: 0.3002 - acc: 0.9016 - val_loss: 0.3890 - val_acc: 0.8927
+
+Epoch 27/30
+
+73257/73257 [==============================] - 17s - loss: 0.2869 - acc: 0.9061 - val_loss: 0.3938 - val_acc: 0.8922
+
+Epoch 28/30
+
+73257/73257 [==============================] - 17s - loss: 0.2903 - acc: 0.9053 - val_loss: 0.4044 - val_acc: 0.8883
+
+Epoch 29/30
+
+73257/73257 [==============================] - 17s - loss: 0.2831 - acc: 0.9074 - val_loss: 0.3972 - val_acc: 0.8920
+
+Epoch 30/30
+
+73257/73257 [==============================] - 17s - loss: 0.2774 - acc: 0.9076 - val_loss: 0.4103 - val_acc: 0.8932
+
+('Test loss:', 0.41029394511705847)
+
+('Test accuracy:', 0.89320835894283956)

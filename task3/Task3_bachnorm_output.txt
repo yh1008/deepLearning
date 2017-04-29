@@ -1,0 +1,233 @@
+[yh2901@node079 yh2901]$ python 13.py
+
+Using TensorFlow backend.
+
+(32, 32, 3, 73257)
+
+('x_train shape:', (73257, 32, 32, 3))
+
+(73257, 'train samples')
+
+(26032, 'test samples')
+
+after process: X train shape: (32, 32, 3, 73257), X test shape: (32, 32, 3, 26032), y train shape: (73257, 10), y test shape: (26032, 10)
+
+13.py:112: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(32, (3, 3), padding="same", input_shape=(32, 32, 3...)`
+
+  input_shape=x_train.shape[1:]))
+
+13.py:114: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(32, (3, 3))`
+
+  model.add(Conv2D(32, 3, 3))
+
+13.py:118: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(64, (3, 3), padding="same")`
+
+  model.add(Conv2D(64, 3, 3, border_mode='same'))
+
+13.py:120: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(64, (3, 3))`
+
+  model.add(Conv2D(64, 3, 3))
+
+13.py:126: UserWarning: Update your `BatchNormalization` call to the Keras 2 API: `BatchNormalization(beta_regularizer=None, epsilon=0.001, beta_initializer="zero", gamma_initializer=<function ..., weights=None, gamma_regularizer=None, momentum=0.99, axis=-1)`
+
+  model.add(BatchNormalization(epsilon=0.001, axis=-1, momentum=0.99, weights=None, beta_init='zero', gamma_init=low_gamma_init, gamma_regularizer=None, beta_regularizer=None))
+
+13.py:128: UserWarning: Update your `BatchNormalization` call to the Keras 2 API: `BatchNormalization(beta_regularizer=None, epsilon=0.001, beta_initializer="zero", gamma_initializer=<function ..., weights=None, gamma_regularizer=None, momentum=0.99, axis=-1)`
+
+  model.add(BatchNormalization(epsilon=0.001, axis=-1, momentum=0.99, weights=None, beta_init='zero', gamma_init=low_gamma_init, gamma_regularizer=None, beta_regularizer=None))
+
+13.py:222: UserWarning: Update your `fit_generator` call to the Keras 2 API: `fit_generator(<keras.pre..., epochs=40, validation_data=(array([[[..., steps_per_epoch=572)`
+
+  validation_data=(x_test, y_test))
+
+Epoch 1/40
+
+2017-04-24 22:53:05.046287: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+
+2017-04-24 22:53:05.046330: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+
+2017-04-24 22:53:05.046338: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+
+2017-04-24 22:53:05.046344: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+
+2017-04-24 22:53:05.046350: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+
+2017-04-24 22:53:05.644969: I tensorflow/core/common_runtime/gpu/gpu_device.cc:887] Found device 0 with properties: 
+
+name: Tesla K80
+
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+
+pciBusID 0000:8a:00.0
+
+Total memory: 11.20GiB
+
+Free memory: 11.13GiB
+
+2017-04-24 22:53:05.645212: I tensorflow/core/common_runtime/gpu/gpu_device.cc:908] DMA: 0 
+
+2017-04-24 22:53:05.645259: I tensorflow/core/common_runtime/gpu/gpu_device.cc:918] 0:   Y 
+
+2017-04-24 22:53:05.645344: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:8a:00.0)
+
+572/572 [==============================] - 48s - loss: 0.9006 - acc: 0.7116 - val_loss: 0.5522 - val_acc: 0.8781
+
+Epoch 2/40
+
+572/572 [==============================] - 39s - loss: 0.5062 - acc: 0.8437 - val_loss: 0.3061 - val_acc: 0.9130
+
+Epoch 3/40
+
+572/572 [==============================] - 39s - loss: 0.4115 - acc: 0.8739 - val_loss: 0.2879 - val_acc: 0.9161
+
+Epoch 4/40
+
+572/572 [==============================] - 39s - loss: 0.3674 - acc: 0.8884 - val_loss: 0.2426 - val_acc: 0.9327
+
+Epoch 5/40
+
+572/572 [==============================] - 40s - loss: 0.3413 - acc: 0.8971 - val_loss: 0.2467 - val_acc: 0.9300
+
+Epoch 6/40
+
+572/572 [==============================] - 39s - loss: 0.3191 - acc: 0.9031 - val_loss: 0.4495 - val_acc: 0.8868
+
+Epoch 7/40
+
+572/572 [==============================] - 39s - loss: 0.3085 - acc: 0.9068 - val_loss: 0.2154 - val_acc: 0.9421
+
+Epoch 8/40
+
+572/572 [==============================] - 40s - loss: 0.2882 - acc: 0.9144 - val_loss: 0.2347 - val_acc: 0.9347
+
+Epoch 9/40
+
+572/572 [==============================] - 39s - loss: 0.2834 - acc: 0.9146 - val_loss: 0.2185 - val_acc: 0.9399
+
+Epoch 10/40
+
+572/572 [==============================] - 39s - loss: 0.2733 - acc: 0.9179 - val_loss: 0.2100 - val_acc: 0.9444
+
+Epoch 11/40
+
+572/572 [==============================] - 39s - loss: 0.2631 - acc: 0.9211 - val_loss: 0.2053 - val_acc: 0.9449
+
+Epoch 12/40
+
+572/572 [==============================] - 39s - loss: 0.2543 - acc: 0.9241 - val_loss: 0.1925 - val_acc: 0.9482
+
+Epoch 13/40
+
+572/572 [==============================] - 39s - loss: 0.2514 - acc: 0.9247 - val_loss: 0.2111 - val_acc: 0.9443
+
+Epoch 14/40
+
+572/572 [==============================] - 39s - loss: 0.2410 - acc: 0.9278 - val_loss: 0.2003 - val_acc: 0.9489
+
+Epoch 15/40
+
+572/572 [==============================] - 39s - loss: 0.2385 - acc: 0.9293 - val_loss: 0.2280 - val_acc: 0.9400
+
+Epoch 16/40
+
+572/572 [==============================] - 39s - loss: 0.2344 - acc: 0.9293 - val_loss: 0.2147 - val_acc: 0.9450
+
+Epoch 17/40
+
+572/572 [==============================] - 39s - loss: 0.2272 - acc: 0.9329 - val_loss: 0.1848 - val_acc: 0.9526
+
+Epoch 18/40
+
+572/572 [==============================] - 39s - loss: 0.2189 - acc: 0.9351 - val_loss: 0.1862 - val_acc: 0.9513
+
+Epoch 19/40
+
+572/572 [==============================] - 39s - loss: 0.2169 - acc: 0.9350 - val_loss: 0.1958 - val_acc: 0.9494
+
+Epoch 20/40
+
+572/572 [==============================] - 39s - loss: 0.2147 - acc: 0.9351 - val_loss: 0.1917 - val_acc: 0.9495
+
+Epoch 21/40
+
+572/572 [==============================] - 40s - loss: 0.2034 - acc: 0.9394 - val_loss: 0.1829 - val_acc: 0.9527
+
+Epoch 22/40
+
+572/572 [==============================] - 39s - loss: 0.2076 - acc: 0.9381 - val_loss: 0.1983 - val_acc: 0.9473
+
+Epoch 23/40
+
+572/572 [==============================] - 39s - loss: 0.1993 - acc: 0.9400 - val_loss: 0.1903 - val_acc: 0.9499
+
+Epoch 24/40
+
+572/572 [==============================] - 39s - loss: 0.1950 - acc: 0.9409 - val_loss: 0.1990 - val_acc: 0.9498
+
+Epoch 25/40
+
+572/572 [==============================] - 40s - loss: 0.1921 - acc: 0.9424 - val_loss: 0.1858 - val_acc: 0.9515
+
+Epoch 26/40
+
+572/572 [==============================] - 39s - loss: 0.1936 - acc: 0.9411 - val_loss: 0.1984 - val_acc: 0.9500
+
+Epoch 27/40
+
+572/572 [==============================] - 39s - loss: 0.1867 - acc: 0.9443 - val_loss: 0.1984 - val_acc: 0.9499
+
+Epoch 28/40
+
+572/572 [==============================] - 39s - loss: 0.1822 - acc: 0.9444 - val_loss: 0.1957 - val_acc: 0.9501
+
+Epoch 29/40
+
+572/572 [==============================] - 40s - loss: 0.1820 - acc: 0.9449 - val_loss: 0.1879 - val_acc: 0.9518
+
+Epoch 30/40
+
+572/572 [==============================] - 39s - loss: 0.1751 - acc: 0.9470 - val_loss: 0.1895 - val_acc: 0.9530
+
+Epoch 31/40
+
+572/572 [==============================] - 39s - loss: 0.1751 - acc: 0.9471 - val_loss: 0.1902 - val_acc: 0.9498
+
+Epoch 32/40
+
+572/572 [==============================] - 40s - loss: 0.1752 - acc: 0.9465 - val_loss: 0.1895 - val_acc: 0.9533
+
+Epoch 33/40
+
+572/572 [==============================] - 39s - loss: 0.1714 - acc: 0.9475 - val_loss: 0.1843 - val_acc: 0.9541
+
+Epoch 34/40
+
+572/572 [==============================] - 39s - loss: 0.1683 - acc: 0.9489 - val_loss: 0.1816 - val_acc: 0.9551
+
+Epoch 35/40
+
+572/572 [==============================] - 39s - loss: 0.1621 - acc: 0.9503 - val_loss: 0.1862 - val_acc: 0.9532
+
+Epoch 36/40
+
+572/572 [==============================] - 39s - loss: 0.1656 - acc: 0.9501 - val_loss: 0.1852 - val_acc: 0.9542
+
+Epoch 37/40
+
+572/572 [==============================] - 39s - loss: 0.1626 - acc: 0.9501 - val_loss: 0.2013 - val_acc: 0.9478
+
+Epoch 38/40
+
+572/572 [==============================] - 39s - loss: 0.1583 - acc: 0.9528 - val_loss: 0.1963 - val_acc: 0.9517
+
+Epoch 39/40
+
+572/572 [==============================] - 39s - loss: 0.1564 - acc: 0.9528 - val_loss: 0.2063 - val_acc: 0.9491
+
+Epoch 40/40
+
+572/572 [==============================] - 39s - loss: 0.1508 - acc: 0.9535 - val_loss: 0.2011 - val_acc: 0.9520
+
+('Test loss:', 0.20111659816357513)
+
+('Test accuracy:', 0.95198217578365085)
